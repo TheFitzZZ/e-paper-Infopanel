@@ -1,0 +1,7 @@
+{
+    "board": "esp8266:esp8266:nodemcuv2",
+    "configuration": "CpuFrequency=80,UploadSpeed=115200,FlashSize=4M3M",
+    "sketch": "3_WiFi.ino",
+    "port": "COM8",
+    "platformio.baudRate": 115200
+}
