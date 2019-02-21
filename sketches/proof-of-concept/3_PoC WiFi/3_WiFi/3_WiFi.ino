@@ -125,11 +125,17 @@ void loop(void)
 
 void drawBitmaps_fitzzz()
 {
+  Serial.println("width");
+  Serial.println(display.width());
+  Serial.println("height");
+  Serial.println(display.height());
   int16_t x = (display.width() - 200) / 2;
   int16_t y = (display.height() - 200) / 2;
-  showBitmapFrom_HTTPS(host_rawcontent, path_prenticedavid, "betty_4.bmp", fp_rawcontent, x, y);
-  delay(2000);
-  //showBitmapFrom_HTTPS(host_rawcontent, path_rawcontent2, "Test-1.bmp", fp_rawcontent, x, y);
+  //showBitmapFrom_HTTPS(host_rawcontent, path_prenticedavid, "betty_4.bmp", fp_rawcontent, x, y);
+  //delay(2000);
+  //showBitmapFrom_HTTPS(host_rawcontent, path_rawcontent2, "Test-2.bmp", fp_rawcontent, x, y);
+  showBitmapFrom_HTTPS(host_rawcontent, path_rawcontent2, "Test-2.bmp", fp_rawcontent, 0, 0); //Bild oben links
+  showBitmapFrom_HTTPS(host_rawcontent, path_rawcontent2, "Test-3.bmp", fp_rawcontent, 0, 0); //Bild oben links
   //delay(10000);
 }
 
