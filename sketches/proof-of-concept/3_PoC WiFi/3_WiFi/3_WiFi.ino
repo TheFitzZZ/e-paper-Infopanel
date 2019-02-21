@@ -45,6 +45,7 @@ char* fp_rawcontent     = "cc aa 48 48 66 46 0e 91 53 2c 9c 7c 23 2a b1 74 4d 29
 #endif
 char* host_rawcontent   = "raw.githubusercontent.com";
 char* path_rawcontent   = "/ZinggJM/GxEPD2/master/extras/bitmaps/";
+char* path_rawcontent2  = "/TheFitzZZ/e-paper-Infopanel/master/sketches/proof-of-concept/3_PoC%20WiFi/3_WiFi/";
 char* path_prenticedavid   = "/prenticedavid/MCUFRIEND_kbv/master/extras/bitmaps/";
 
 void showBitmapFrom_HTTP(char* host, char* path, char* filename, int16_t x, int16_t y, bool with_color = true);
@@ -108,7 +109,8 @@ void setup()
   else
   {
     //drawBitmaps_200x200();
-    drawBitmaps_other();
+    //drawBitmaps_other();
+    drawBitmaps_fitzzz();
   }
 
   //drawBitmaps_test();
@@ -119,6 +121,16 @@ void setup()
 
 void loop(void)
 {
+}
+
+void drawBitmaps_fitzzz()
+{
+  int16_t x = (display.width() - 200) / 2;
+  int16_t y = (display.height() - 200) / 2;
+  showBitmapFrom_HTTPS(host_rawcontent, path_prenticedavid, "betty_4.bmp", fp_rawcontent, x, y);
+  delay(2000);
+  //showBitmapFrom_HTTPS(host_rawcontent, path_rawcontent2, "Test-1.bmp", fp_rawcontent, x, y);
+  //delay(10000);
 }
 
 void drawBitmaps_200x200()
