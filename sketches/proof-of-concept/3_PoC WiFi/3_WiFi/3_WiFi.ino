@@ -135,7 +135,7 @@ void drawBitmaps_fitzzz()
   //delay(2000);
   //showBitmapFrom_HTTPS(host_rawcontent, path_rawcontent2, "Test-2.bmp", fp_rawcontent, x, y);
   //showBitmapFrom_HTTPS(host_rawcontent, path_rawcontent2, "Test-2.bmp", fp_rawcontent, 0, 0); //Bild oben links
-  showBitmapFrom_HTTPS(host_rawcontent, path_rawcontent2, "Test-3.bmp", fp_rawcontent, 0, 0); //Bild oben links
+  showBitmapFrom_HTTPS(host_rawcontent, path_rawcontent2, "Test-5.bmp", fp_rawcontent, 0, 0); //Bild oben links
   //delay(10000);
 }
 
